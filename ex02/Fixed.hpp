@@ -6,11 +6,12 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 17:51:29 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/26 15:47:38 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/26 16:54:17 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FIXED_HPP
+#define FIXED_HPP
 #include <iostream>
 class Fixed {
 public:
