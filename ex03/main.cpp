@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 09:49:14 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/26 17:15:12 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/26 17:17:37 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,12 @@ int main( void )
 	Point const p2(4.5, 4); //on the edge
 	Point const p3(6.5, 4.5); //outside
 	Point const p4(4.5, 4.002); //barely outside
+	Point const p5(5, 5); //one of the vertices
 	std::cout << "Triangle: a" << a << " b" << b << " c" << c << std::endl;
 	std::cout << "Point " << p1 << (bsp(a, b, c, p1) ? " is " : " is NOT ") << "inside the triangle" << std::endl;
 	std::cout << "Point " << p2 << (bsp(a, b, c, p2) ? " is " : " is NOT ") << "inside the triangle" << std::endl;
 	std::cout << "Point " << p3 << (bsp(a, b, c, p3) ? " is " : " is NOT ") << "inside the triangle" << std::endl;
 	std::cout << "Point " << p4 << (bsp(a, b, c, p4) ? " is " : " is NOT ") << "inside the triangle" << std::endl;
+	std::cout << "Point " << p5 << (bsp(a, b, c, p5) ? " is " : " is NOT ") << "inside the triangle" << std::endl;
 	return (0);
 }
